@@ -29,7 +29,9 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 		if "3" in str(post_data):
 			self.wfile.write("The scan will take a while\n".encode('utf-8'))
 			rc=subprocess.call('./tcp_ack_nmap.sh')
-			
+			file=open('TCPACKScan.txt','r')
+			ok=file.read().replace('\n','<br />')
+			self.wfile.write(('<!DOCTYPE html><p>'+str(ok)+'</p></html>').encode('utf-8'))
 		if "4" in str(post_data):
 			self.wfile.write("The scan will take a while\n".encode('utf-8'))
 			rc=subprocess.call('./aggressive_nmap.sh')
