@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: black;
+        color: green;
+        font-family: monospace;
+        font-size: large;
+        text-align: center;
+    }
+    button {
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        font-size: medium;
+        padding: auto;
+        align-items: center;
+    }
+    p1 {
+        color: orange;
+        font-size: x-large; 
+    }
+    h1 {
+        color:green;
+        font-family: monospace;
+        font-size: xx-large; 
+        text-align: center;  
+    }
+    h2 {
+        color: rgb(253, 252, 252);
+        font-family: monospace;
+        font-size: medium; 
+        text-align: center;  
+    }
+</style>
+<body>
+    <div class="testContent">
+        <h1>Welcome to the CoRAcore Scan Page!</h1>
+        <p1>Select which Nmap Scan you would like to operate (5 minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="1"> Basic</button></form>
+            <form action = "" method = "post"><button name="scan" value="2"> TCP SYN Scan </button></form>
+            <form action = "" method = "post"><button name="scan" value="3"> TCP ACK Scan </button></form>
+            <form action = "" method = "post"><button name="scan" value="4"> Aggressive Scan </button></form>
+            <form action = "" method = "post"><button name="scan" value="5"> Service Version Scan </button></form>
+        </ul>  
+        <p1>Select the Uniscan button to run a Uniscan (30 Minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="6"> Uniscan Scan</button></form>
+        </ul>  
+
+        <p1>Select the Nikto button to run a Nikto Scan (30 Minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="7"> Nikto Scan</button></form>
+        </ul>
+        
+        <p1>Select the Nessus button to run a Nessus Scan (30 Minutes).</p1>
+        <ul>
+            <form action = "" method = "post"><button name="scan" value="8"> Nessus Scan </button>
+        </ul>
+        <h2><n>All scans will be printed to a file in the container.</n></h2>  
+    </div>
+</body>
