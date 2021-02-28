@@ -35,7 +35,7 @@
 <body>
     <div class="testContent">
         <h1>Welcome to the CoRAcore Scan Page!</h1>
-        <p1>Select which Nmap Scan you would like to operate (5 minutes).</p1>
+        <p1>Select which Nmap Scan you would like to operate (Time estimate: 5-15 minutes).</p1>
         <ul>
             <form action = "" method = "post"><button name="scan" value="1"> Basic</button></form>
             <form action = "" method = "post"><button name="scan" value="2"> TCP SYN Scan </button></form>
@@ -43,20 +43,20 @@
             <form action = "" method = "post"><button name="scan" value="4"> Aggressive Scan </button></form>
             <form action = "" method = "post"><button name="scan" value="5"> Service Version Scan </button></form>
         </ul>  
-        <p1>Select the Uniscan button to run a Uniscan (30 Minutes).</p1>
+        <p1>Select the Uniscan button to run a Uniscan (Time estimate: 30-45 Minutes).</p1>
         <ul>
             <form action = "" method = "post"><button name="scan" value="6"> Uniscan Scan</button></form>
         </ul>  
 
-        <p1>Select the Nikto button to run a Nikto Scan (30 Minutes).</p1>
+        <p1>Select the Nikto button to run a Nikto Scan (Time estimate: 30-90 Minutes).</p1>
         <ul>
             <form action = "" method = "post"><button name="scan" value="7"> Nikto Scan</button></form>
         </ul>
         
-        <p1>Select the Nessus button to run a Nessus Scan (30 Minutes).</p1>
+        <p1>Select the link to begin using Nessus (Time estimate: 30-45 Minutes).</p1>
         <ul>
-            <form action = "" method = "post"><button name="scan" value="8"> Nessus Scan </button>
+            <a href="https://localhost:8834/" title="Go to the Nessus web-tool">Open a link to go to Nessus</a>
         </ul>
-        <h2><n>All scans will be printed to a file in the container.</n></h2>  
+        <h2><n>Scan times will vary by computer running docker.</n></h2>  
     </div>
 </body>
